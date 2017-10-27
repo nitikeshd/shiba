@@ -8,7 +8,7 @@ module.exports =
   VERSION:        packageJson.version,
   CLIENT_SEED:
     process.env.BUSTABIT_CLIENTSEED ||
-    '000000000000000007a9a31ff7f07463d91af6b5454241d5faf282e5e0fe1b3a',
+    '000000000000000007a9a31ff7f07463d91af6b5454241d5faf282e5e0fe1b3a', /*Please take this client seed id from your browser by clicking on the https from your url bar then copy paste the id.*/
   GAMESERVER:     process.env.BUSTABIT_GAMESERVER || 'https://gs.bustabit.com',
   WEBSERVER:      process.env.BUSTABIT_WEBSERVER || 'https://www.bustabit.com',
   OXR_APP_ID:     process.env.OXR_APP_ID,
