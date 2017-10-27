@@ -99,7 +99,7 @@ function Shiba() {
         if (msg.type === 'say')
           yield* self.onSay(msg);
       } catch(err) {
-        console.err('[Shiba.onMsg]', err && err.stack || err);
+        console.error('[Shiba.onMsg]', err && err.stack || err);
       }
     }));
 
