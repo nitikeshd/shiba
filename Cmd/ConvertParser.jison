@@ -140,12 +140,12 @@ function sym2iso(sym) {
 
 function defaultTarget(sym) {
   switch(sym.toUpperCase()) {
-  case 'BIT':
-  case 'BITS':
-  case 'BTC':
+  case 'DIGIS':
+  case 'DIGI':
+  case 'DOGE':
     return 'USD';
   default:
-    return 'BIT';
+    return 'DIGI';
   }
 }
 %}

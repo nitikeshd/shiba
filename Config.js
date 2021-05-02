@@ -8,12 +8,12 @@ module.exports =
   VERSION:        packageJson.version,
   CLIENT_SEED:
     process.env.BUSTABIT_CLIENTSEED ||
-    '000000000000000007a9a31ff7f07463d91af6b5454241d5faf282e5e0fe1b3a',
-  GAMESERVER:     process.env.BUSTABIT_GAMESERVER || 'https://gs.bustabit.com',
-  WEBSERVER:      process.env.BUSTABIT_WEBSERVER || 'https://www.bustabit.com',
+    '0000000000000000059876e96f7a08c4b90976cea15664ad900cebab04f8274f',
+  GAMESERVER:     process.env.BUSTABIT_GAMESERVER || 'https://gm2.dogetale.com',
+  WEBSERVER:      process.env.BUSTABIT_WEBSERVER || 'https://dogetale.com',
   OXR_APP_ID:     process.env.OXR_APP_ID,
   SESSION:        process.env.SHIBA_SESSION,
-  DATABASE:       process.env.SHIBA_DATABASE || 'postgres://localhost/shibadb',
+  DATABASE:       process.env.SHIBA_DATABASE || 'postgres://dogeuser:Doge!123!@localhost:5432/shibadb',
   CHAT_HISTORY:   process.env.SHIBA_CHAT_HISTORY || 2000,
   GAME_HISTORY:   process.env.SHIBA_GAME_HISTORY || 200,
   /* keep in lowercase */

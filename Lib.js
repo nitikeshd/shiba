@@ -73,7 +73,7 @@ module.exports = {
       // notation. We apply some selective rounding to overcome
       // numerical errors in calculating the base 10 log.
       let e = Math.log(f) / Math.LN10;
-      e = Math.round(1e8 * e) / 1e8;
+      e = Math.round(1e5 * e) / 1e5;
       e = Math.floor(e);
 
       // The modifier that we want to use, e.g. k or m.

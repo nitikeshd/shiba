@@ -31,9 +31,9 @@ exports.getInfo = function*() {
 exports.getAveragePrice = function*() {
   let ticker = yield* tickerCache.get('');
 
-  let ask = Math.round(1e8*parseFloat(ticker.ask, 10));
-  let bid = Math.round(1e8*parseFloat(ticker.bid, 10));
-  let avg = (ask + bid) / 2e8;
+  let ask = Math.round(1e5*parseFloat(ticker.ask, 10));
+  let bid = Math.round(1e5*parseFloat(ticker.bid, 10));
+  let avg = (ask + bid) / 2e5;
 
   debug('Average price: ' + avg);
   return avg;

@@ -93,7 +93,7 @@ case 3:
 this.$ = Math.round(1e5 * parseFloat(yytext.replace(/[,xk]/g, '')));
 break;
 case 4:
-this.$ = Math.round(1e8 * parseFloat(yytext.replace(/[,xm]/g, '')));
+this.$ = Math.round(1e5 * parseFloat(yytext.replace(/[,xm]/g, '')));
 break;
 case 5:
 this.$ = yytext;

@@ -41,7 +41,7 @@ function* getRates() {
   // use the realtime Bitstamp price to be more up to date in this case.
   rates.BTC = 1 / usdBtc;
   rates.BIT = 1e6 / usdBtc;
-  rates.SAT = 1e8 / usdBtc;
+  rates.SAT = 1e5 / usdBtc;
 
   debug('Updating Poloniex rate info');
   function importpolo(sym) {
@@ -57,7 +57,7 @@ function* getRates() {
   }
 
   importpolo('CLAM');
-  importpolo('DOGE'); rates.KOINU = 1e8 * rates.DOGE;
+  importpolo('DOGE'); rates.KOINU = 1e5 * rates.DOGE;
   importpolo('LTC');
   importpolo('NXT');
   importpolo('ETH');

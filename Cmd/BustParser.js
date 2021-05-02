@@ -90,7 +90,7 @@ case 2:
 this.$ = Math.round(1e5 * parseFloat(yytext.replace(/[,xk]/g, '')));
 break;
 case 3:
-this.$ = Math.round(1e8 * parseFloat(yytext.replace(/[,xm]/g, '')));
+this.$ = Math.round(1e5 * parseFloat(yytext.replace(/[,xm]/g, '')));
 break;
 case 4: case 10:
 this.$ =  { min: $$[$0],          text: "≥" + _.trim(yytext) };
